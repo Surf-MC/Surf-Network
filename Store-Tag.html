@@ -1,1 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SurfMC | Server Store</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+  body {
+    background-color: #1a202c; /* Gray-900 */
+    color: white;
+    font-size:25px;
+    font-family: sans-serif;
+  }
+  .header {
+    background-color: #2d3748; /* Gray-800 */
+    word-spacing: 1px;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .button-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 80px;
+    margin-bottom: 20px; /* Margin below buttons */
+  }
+  .button {
+    background-color: #2d3748; /* Initial background color */
+    border: none;
+    border-radius: 50%; /* Makes it circular */
+    color: white;
+    cursor: pointer;
+    width: 90px; /* Width of the button */
+    height: 90px; /* Height of the button */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition for background color and transform */
+  }
+  
+  .button:hover {
+    background-color: #49C4DE; /* Change to a lighter shade on hover */
+    transform: scale(1.1); /* Slightly scale up the button */
+  }
 
+  .button img {
+    width: 70px; /* Adjust as needed */
+    height: 70px; /* Adjust as needed */
+  }
+
+  .button-label {
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center; /* Center the text below the button */
+    margin-top: 8px; /* Space between button and text */
+  }
+
+  .image-container {
+    display: flex;
+    justify-content: center; /* Aligns horizontally to the center */
+    align-items: center; /* Aligns vertically to the center */
+  }
+
+  img {
+    max-width: 100%; /* Ensures the image is responsive */
+    height: auto; /* Keeps the image aspect ratio */
+  }
+
+  .description {
+    text-align: center;
+    margin: 20px;
+    font-size: 1.2em;
+  }
+  .hidden {
+            display: none;
+        }
+        .clickable {
+            cursor: pointer;
+        }
+</style>
+</head>
+<body class="bg-[#1a202c] text-white font-sans">
+  <header class="header">
+    <h2 class="text-blue-400 font-bold text-lg">Surf Network™</h2>
+    <nav class="space-x-6">
+<a href="index.html" class="text-white hover:text-blue-400"><i class="ph ph-house"></i> <b>Home</b></a>
+<a href="Store.html" class="text-white hover:text-blue-400"><i class="ph ph-storefront"></i> <b>Store</b></a>
+<a href="Updates.html" class="text-white hover:text-blue-400"><i class="ph ph-chat"></i> <b>Updates</b></a>
+<a href="Help.html" class="text-white hover:text-blue-400"><i class="ph ph-question"></i> <b>Help</b></a>
+<a href="Signup.html" class="text-white hover:text-blue-400"><i class="ph ph-user-plus"></i> <b>Sign-Up</b></a> 
+<a href="Login.html" class="text-white hover:text-blue-400"><i class="ph ph-sign-in"></i> <b>login</b></a>    
+    </nav>
+  </header>
+  
+  
+  <main class="text-center py-16 px-4">
+    <div class="button-container">
+      <div class="flex flex-col items-center">
+        <button class="button">
+          <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/d035848e-f9f0-41d4-8777-38b62534616d/dk7p5tl-1a221b9e-6a5e-4010-95fd-46233060b2a2.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2QwMzU4NDhlLWY5ZjAtNDFkNC04Nzc3LTM4YjYyNTM0NjE2ZFwvZGs3cDV0bC0xYTIyMWI5ZS02YTVlLTQwMTAtOTVmZC00NjIzMzA2MGIyYTIucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.p8ZbYhG65zngUg_bScFNHvUw5MeWArlL1vtLc4WWXX0" alt="Discord" /> <!-- Replace with actual icon -->
+        </button>
+        <div class="button-label">Discord</div>
+      </div>
+      <div class="image-container">
+      <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/d035848e-f9f0-41d4-8777-38b62534616d/dk7pcah-9c2e2f3d-c6ec-455c-b2fe-7e289f47c0b7.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2QwMzU4NDhlLWY5ZjAtNDFkNC04Nzc3LTM4YjYyNTM0NjE2ZFwvZGs3cGNhaC05YzJlMmYzZC1jNmVjLTQ1NWMtYjJmZS03ZTI4OWY0N2MwYjcucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.R54WhKRmy_uucboDopM5CqQFL2OVb5mIwZPrR9409zw" alt="SurfMC Image">
+    </div>
+      <div class="flex flex-col items-center">
+        <button class="button">
+          <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/d035848e-f9f0-41d4-8777-38b62534616d/dk7p7jw-bed8d02b-49fc-46c3-b739-0ffb89d66c46.png/v1/fill/w_1280,h_1280/_citypng_com_hd_white_youtube_yt_logo_symbol_icon__by_xneon1226_dk7p7jw-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTI4MCIsInBhdGgiOiJcL2ZcL2QwMzU4NDhlLWY5ZjAtNDFkNC04Nzc3LTM4YjYyNTM0NjE2ZFwvZGs3cDdqdy1iZWQ4ZDAyYi00OWZjLTQ2YzMtYjczOS0wZmZiODlkNjZjNDYucG5nIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.O98ug8rxnYvv9WCwZ3LIgOrcIkhCxxCANrjrSKwjOpE" alt="Youtube" /> <!-- Replace with actual icon -->
+        </button>
+        <div class="button-label">Youtube</div>
+      </div>
+    </div>
+
+  <!-- Header -->
+  <header class="text-center mt-10 mb-8">
+    <h1 class="text-4xl font-bold mb-2">Surf Network Tag Store</h1>
+    <p class="text-gray-400">Enhance your gameplay experience with our premium Tags, Note: you don't needs any of these to still play Surf Network</p>
+  </header>
+
+
+
+
+
+
+
+<body
+
+  <section class="grid grid-cols-1 md:grid-cols-3 gap-6 px-6 max-w-6xl mx-auto mb-20">
+  
+    <div class="max-w-6xl mx-auto mt-10 p-4">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-6 max-w-6xl mx-auto mb-20">
+            <!-- Rank Card -->
+            
+              <div class="bg-gray-800 rounded-lg p-6 border border-blue-500 mb-4 clickable flex flex-col items-center" onclick="toggleList(this)">
+                <div class="rounded-lg border border-gray-300 w-[250px] h-[50px] mb-4 flex items-center justify-center">
+                    <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/d035848e-f9f0-41d4-8777-38b62534616d/dk84d1i-fb49e096-cf70-4e30-869f-043a837b4a41.png/v1/fit/w_509,h_89,q_70,strp/screenshot_2025_07_27_16_05_14_by_xneon1226_dk84d1i-375w-2x.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODkiLCJwYXRoIjoiXC9mXC9kMDM1ODQ4ZS1mOWYwLTQxZDQtODc3Ny0zOGI2MjUzNDYxNmRcL2RrODRkMWktZmI0OWUwOTYtY2Y3MC00ZTMwLTg2OWYtMDQzYTgzN2I0YTQxLnBuZyIsIndpZHRoIjoiPD01MDkifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.QkZaeUcu2W3yPWnCGVQpIxLPW5W144sJajvKWUXHe8s" alt="VIP Image" class="h-auto max-w-full rounded-md">
+                </div>
+                <h3 class="text-lg font-bold mb-1 text-center">CUSTOM TAG</h3>
+
+                <div class="text-sm text-gray-400 mb-4 text-center">
+                    Create your own custom tag, and we'll also add the tag to the server store
+                </div>
+
+
+                <div class="flex justify-between items-center mb-2 w-full">
+                    <span class="text-blue-400 font-semibold">Starting from: $0.99</span>
+                </div>
+
+                <button onclick="location.href='Store-Rank.html';"
+                    class="w-full bg-gray-700 hover:bg-gray-600 font-semibold py-2 rounded"
+                    aria-label="Go to Tags">Create Custom tag</button>
+            </div>
+            
+            
+            
+            
+            
+                        
+              <div class="bg-gray-800 rounded-lg p-6 border border-blue-500 mb-4 clickable flex flex-col items-center" onclick="toggleList(this)">
+                <div class="rounded-lg border border-gray-300 w-[250px] h-[50px] mb-4 flex items-center justify-center">
+                    <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/d035848e-f9f0-41d4-8777-38b62534616d/dk84dw3-0d6ce1bf-fe19-4d34-ae39-1f4a3c21d8c2.png/v1/fit/w_509,h_89,q_70,strp/screenshot_2025_07_27_16_08_01_by_xneon1226_dk84dw3-375w-2x.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODkiLCJwYXRoIjoiXC9mXC9kMDM1ODQ4ZS1mOWYwLTQxZDQtODc3Ny0zOGI2MjUzNDYxNmRcL2RrODRkdzMtMGQ2Y2UxYmYtZmUxOS00ZDM0LWFlMzktMWY0YTNjMjFkOGMyLnBuZyIsIndpZHRoIjoiPD01MDkifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.uEGK0WBnhsH4ghtnhvkhJyNUz4LB3WZHZUokQnIbH78" alt="PRO Image" class="h-auto max-w-full rounded-md">
+                </div>
+                <h3 class="text-lg font-bold mb-1 text-center">NEONIC</h3>
+
+                <div class="text-sm text-gray-400 mb-4 text-center">
+                Xneon's [Developer] Tag, gives you +1000 coolness and +1000 priority from Xneon
+                </div>
+
+             
+
+                <div class="flex justify-between items-center mb-2 w-full">
+                    <span class="text-blue-400 font-semibold">$0.99</span>
+                </div>
+
+                <button onclick="location.href='Store-Rank.html';"
+                    class="w-full bg-gray-700 hover:bg-gray-600 font-semibold py-2 rounded"
+                    aria-label="Go to Tags">Buy Neonic Tag</button>
+            </div>
+            
+            
+            
+            
+            
+            
+                        
+              <div class="bg-gray-800 rounded-lg p-6 border border-blue-500 mb-4 clickable flex flex-col items-center" onclick="toggleList(this)">
+                <div class="rounded-lg border border-gray-300 w-[250px] h-[50px] mb-4 flex items-center justify-center">
+                    <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/d035848e-f9f0-41d4-8777-38b62534616d/dk84gp8-9f44c218-0cdb-4f39-81bd-0e04d28f9dc0.png/v1/fit/w_508,h_85,q_70,strp/screenshot_2025_07_27_16_27_37_by_xneon1226_dk84gp8-375w-2x.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODUiLCJwYXRoIjoiXC9mXC9kMDM1ODQ4ZS1mOWYwLTQxZDQtODc3Ny0zOGI2MjUzNDYxNmRcL2RrODRncDgtOWY0NGMyMTgtMGNkYi00ZjM5LTgxYmQtMGUwNGQyOGY5ZGMwLnBuZyIsIndpZHRoIjoiPD01MDgifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.L85Inz22j5SmxbxFjjnBQ5lL5a8qY6n-4KXDrMXqFBQ" alt="MYTHIC Image" class="h-auto max-w-full rounded-md">
+                </div>
+                <h3 class="text-lg font-bold mb-1 text-center">G00NER</h3>
+
+                <div class="text-sm text-gray-400 mb-4 text-center">
+                 Become A part of the G00NERs
+               </div>
+
+                 
+
+                <div class="flex justify-between items-center mb-2 w-full">
+                    <span class="text-blue-400 font-semibold">$0.99</span>
+                </div>
+
+                <button onclick="location.href='Store-Rank.html';"
+                    class="w-full bg-gray-700 hover:bg-gray-600 font-semibold py-2 rounded"
+                    aria-label="Go to Tags">Buy G00NER Tag</button>
+            </div>
+            
+            
+            
+              <div class="bg-gray-800 rounded-lg p-6 border border-blue-500 mb-4 clickable flex flex-col items-center" onclick="toggleList(this)">
+                <div class="rounded-lg border border-gray-300 w-[250px] h-[50px] mb-4 flex items-center justify-center">
+                    <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/d035848e-f9f0-41d4-8777-38b62534616d/dk84hbs-8330f638-f936-4cc2-b9c4-790eba921e83.png/v1/fit/w_508,h_85,q_70,strp/screenshot_2025_07_27_16_30_43_by_xneon1226_dk84hbs-375w-2x.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODUiLCJwYXRoIjoiXC9mXC9kMDM1ODQ4ZS1mOWYwLTQxZDQtODc3Ny0zOGI2MjUzNDYxNmRcL2RrODRoYnMtODMzMGY2MzgtZjkzNi00Y2MyLWI5YzQtNzkwZWJhOTIxZTgzLnBuZyIsIndpZHRoIjoiPD01MDgifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.KmRYoApjlMfUs44SBIm4cGBI3ZR8VA03HAgSq76VEeM" alt="VIP+ Image" class="h-auto max-w-full rounded-md">
+                </div>
+                <h3 class="text-lg font-bold mb-1 text-center">USSR</h3>
+
+                <div class="text-sm text-gray-400 mb-4 text-center">
+                  Become Communist XD
+                        </div>
+
+                   
+
+                <div class="flex justify-between items-center mb-2 w-full">
+                    <span class="text-blue-400 font-semibold">$0.99</span>
+                </div>
+
+                <button onclick="location.href='Store-Rank.html';"
+                    class="w-full bg-gray-700 hover:bg-gray-600 font-semibold py-2 rounded"
+                    aria-label="Go to Tags">Buy USSR Tag</button>
+            </div>
+            
+            
+            
+            
+            
+                        
+              <div class="bg-gray-800 rounded-lg p-6 border border-blue-500 mb-4 clickable flex flex-col items-center" onclick="toggleList(this)">
+                <div class="rounded-lg border border-gray-300 w-[250px] h-[50px] mb-4 flex items-center justify-center">
+                    <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/d035848e-f9f0-41d4-8777-38b62534616d/dk84hnq-8c57b833-362b-407f-a252-8b3718eb4744.png/v1/fit/w_508,h_85,q_70,strp/screenshot_2025_07_27_16_32_09_by_xneon1226_dk84hnq-375w-2x.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODUiLCJwYXRoIjoiXC9mXC9kMDM1ODQ4ZS1mOWYwLTQxZDQtODc3Ny0zOGI2MjUzNDYxNmRcL2RrODRobnEtOGM1N2I4MzMtMzYyYi00MDdmLWEyNTItOGIzNzE4ZWI0NzQ0LnBuZyIsIndpZHRoIjoiPD01MDgifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.rgyoENSvf5kvVGbAsX1CZmSZtymH1MgBxHZtVtiHypk" alt="PRO+ Image" class="h-auto max-w-full rounded-md">
+                </div>
+                <h3 class="text-lg font-bold mb-1 text-center">POSEIDON</h3>
+
+                <div class="text-sm text-gray-400 mb-4 text-center">
+                    Become The Greek god of the Ocean 
+                </div>
+
+              
+
+                <div class="flex justify-between items-center mb-2 w-full">
+                    <span class="text-blue-400 font-semibold">$0.99</span>
+                </div>
+
+                <button onclick="location.href='Store-Rank.html';"
+                    class="w-full bg-gray-700 hover:bg-gray-600 font-semibold py-2 rounded"
+                    aria-label="Go to Tags">Buy POSEIDON Tag</button>
+            </div>
+  </div>
+  </div>
+              
+</body>
+<footer> 
+
+  <!-- Help Section -->
+  <section class="text-center mt-20 bg-[#12161f] py-10 px-6 rounded-lg shadow max-w-3xl mx-auto">
+    <h2 class="text-lg font-semibold mb-2">Need Help?</h2>
+    <p class="text-gray-400 mb-4">Have questions about our store items? Join our Discord server for support and community discussion.</p>
+    <a href="https://discord.gg/tSbKh95Tfx" class="bg-indigo-600 hover:bg-indigo-700 px-4 py-2 rounded text-white font-semibold">Join Discord</a>
+  </section>
+</footer>
+</html> 
